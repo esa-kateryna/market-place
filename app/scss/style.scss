@@ -24,8 +24,29 @@ ul{
 		padding: 0;
 	}
 }
+.logo{
 
+}
+.contact-text{
+	span{
+		color: red;
+	}
+}
+.cart{
 
+}
+.login-btn{
+	background-color: $top;
+}
+.register-btn{
+	background-color: #e74c3c;
+}
+.header-bottom{
+	background-color: $bg;
+}
+.menu{
+	
+}
 .footer{
 	background-color: $bg;
 }
@@ -118,13 +139,10 @@ ul{
 	a{
 		width: 28px;
 		height: 28px;
-		background-image: url(../img/css_sprites.png);
-		background-position: -1px -1px;
 		text-align: center;
 		line-height: 30px;
 	}
 	.footer-facebook{
-		background-position: -31px -1px;
 		background-color: #3d5998;
 		&::before{
 			content: "\f09a";
@@ -135,7 +153,6 @@ ul{
 		}
 	}
 	.footer-twitter{
-		
 		background-color: #55acee;
 		&::before{
 			content: "\f099";
@@ -145,7 +162,6 @@ ul{
 		}
 	}
 	.footer-youtube{
-		background-position: -1px -31px;
 		background-color: #e52d27;
 		&::before{
 			content: "\f16a";
@@ -155,7 +171,6 @@ ul{
 		}
 	}
 	.footer-pinterest{
-		background-position: -31px -31px;
 		background-color: #ffffff;
 		&::before{
 			content: "\f0d2";
@@ -165,7 +180,6 @@ ul{
 		}
 	}
 	.footer-linkedin{
-		background-position: -61px -1px;
 		background-color: #1565c0;
 		&::before{
 			content: "\f0e1";
