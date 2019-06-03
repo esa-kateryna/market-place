@@ -84,9 +84,8 @@ ul{
 .login-btn{
 	background-color: $top;
 	color: #fff;
-  	font-size: 12px;
+	font-size: 12px;
 	min-width: 72px;
-	border: none;
 	border-radius: 3px;
   	text-align: center;
   	padding: 5px 15px;
@@ -97,10 +96,9 @@ ul{
 	color: #fff;
   	font-size: 12px;
 	min-width: 72px;
-	border: none;
 	border-radius: 3px;
   	text-align: center;
-  	padding: 5px 15px;
+	padding: 5px 15px;
 }
 .header-bottom{
 	background-color: $bg;
@@ -303,4 +301,10 @@ ul{
 	color: $grey;
 	text-align: center;
 	line-height: 36px;
+}
+
+.login-wrapper{
+	width: 200px;
+	height: 200px;
+	background-color: $top;
 }

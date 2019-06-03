@@ -26,8 +26,8 @@
                         <div class="cart">
                             <span>8</span>
                         </div>
-                        <button class="login-btn">Login</button>
-                        <button class="register-btn">Register</button>
+                        <a class="login-btn" data-fancybox data-src="#modal" href="javascript:;">Login</a>
+                        <a class="register-btn" href="#">Register</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,23 @@
         </div>
     </footer>
     
-
+    <div id="modal">
+        <div class="modal__title">
+            login
+        </div>
+        <div class="modal__form-inner">
+        <form class="modal__form">
+            <label class="form__name">
+                <input type="text" autocomplete="off" placeholder="Name">
+            </label>
+            <label class="form__pass">
+                <input type="password" autocomplete="off" placeholder="Password">
+            </label>
+            <input type="submit" value="SUBMIT">
+            <a class="form__link" href="#">Creat An Account?</a>
+        </form>
+            <a class="form__lost-pass" href="#">Lost Password?</a>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="js/main.js"></script>

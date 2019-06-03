@@ -91,7 +91,6 @@ ul {
   color: #fff;
   font-size: 12px;
   min-width: 72px;
-  border: none;
   border-radius: 3px;
   text-align: center;
   padding: 5px 15px;
@@ -102,7 +101,6 @@ ul {
   color: #fff;
   font-size: 12px;
   min-width: 72px;
-  border: none;
   border-radius: 3px;
   text-align: center;
   padding: 5px 15px; }
@@ -284,3 +282,8 @@ ul {
   color: #b7c3c8;
   text-align: center;
   line-height: 36px; }
+
+.login-wrapper {
+  width: 200px;
+  height: 200px;
+  background-color: #8bc34a; }
