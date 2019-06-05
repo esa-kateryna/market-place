@@ -343,6 +343,41 @@ ul{
 	}
 }
 
+.slider{
+	padding: 100px 0px 120px;
+	.slick-dots{
+		text-align: center;
+		li{
+			display: inline-block;
+			margin-left: 4px;
+			margin-right: 4px;
+			button{
+				border-radius: 50%;
+				background-color: rgb(232, 232, 232);
+				width: 22px;
+				height: 22px;
+				padding: 0;
+				font-size: 0;
+				border: none;
+				outline: none;
+				cursor: pointer;
+			}
+			&.slick-active{
+				button{
+					background-color: $top;
+				}
+			}
+		}
+	}
+}
+.slider__title{
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 36px;
+	font-weight: 700;
+	color: $bg;
+}
+
 
 .advantages{
 	background-color: $bg;
@@ -438,7 +473,34 @@ ul{
 	border: none;
 	margin-right: 55px;
 }
-
+.tutorials-title{
+	color: $bg;
+	font-size: 36px;
+	line-height: 60px;
+	font-weight: 700;
+	text-transform: capitalize;
+	padding-top: 120px;
+	text-align: center;
+	margin-bottom: 85px;
+}
+.tutorials-content{
+	display: flex;
+	justify-content: space-between;
+}
+.tutorials-content-item{
+	background-color: #f8f8f8;
+	margin-bottom: 125px;
+}
+.tutorials-item-title{
+	color: $bg;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: capitalize;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
 
 .footer{
 	background-color: $bg;
