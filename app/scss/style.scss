@@ -186,6 +186,9 @@ ul{
 	background-color: #f4f6f5;
 	padding: 100px 0;
 }
+.container-fluid{
+	padding: 0 30px;
+}
 .portfolio__title{
 	text-align: center;
 	color: $bg;
@@ -196,7 +199,7 @@ ul{
 }
 
 .item{
-	max-width: 440px;
+	max-width: 350px;
 	width: 100%;
 	border: 1px solid #e7ecf2;
 	margin-bottom: 30px;
@@ -321,7 +324,7 @@ ul{
 		font-weight: 500;
 		cursor: pointer;
 		&.mixitup-control-active{
-			background-color: $red;
+			background-color: #e74c3c;
 			color: #fff;
 		}
 	}
