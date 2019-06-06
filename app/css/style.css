@@ -162,8 +162,7 @@ ul {
     font-size: 14px;
     color: #90a4ae;
     font-weight: 500;
-    padding-left: 25px;
-    padding-right: 50px;
+    padding-left: 10px;
     outline: none; }
     .search__form input::-webkit-input-placeholder {
       font-size: 14px;
