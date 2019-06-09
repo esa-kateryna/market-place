@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.5",
     "fancyapps/fancybox": "^3.5.7",
     "gulp": "^4.0.1",
@@ -21,5 +22,6 @@
     "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "dependencies": {}
 }

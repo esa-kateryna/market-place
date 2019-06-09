@@ -18,10 +18,11 @@ gulp.task('scss', function(){
         .pipe(scss())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
-});
+}); 
 
 gulp.task('css', function(){
-    return gulp.src('app/css/libs.css')
+    return gulp.src(['app/css/libs.css',
+                    'node_modules/bootstrap/dist/css/bootstrap-grid.css'])
         .pipe(cssnano())
         .pipe(rename({'suffix' : '.min'}))
         .pipe(gulp.dest('app/css'))
