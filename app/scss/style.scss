@@ -828,8 +828,9 @@ ul{
 			margin-bottom: 30px;
 			padding-left: 30px;
 			padding-right: 30px;
-			padding-bottom: 40px;
+			padding-bottom: 20px;
 			background-color: #fff;
+			border: 1px solid #dcdcdc;
 			li{
 				line-height: 40px;
 				color: $bg;
@@ -852,7 +853,9 @@ ul{
 			font-size: 20px;
 			line-height: 60px;
 			font-weight: 700;
-			padding-top: 20px;
+			padding-top: 10px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #dcdcdc;
 		}
 		
 		.price-range-box{
@@ -860,25 +863,42 @@ ul{
 			margin-bottom: 30px;
 			padding-left: 30px;
 			padding-right: 30px;
+			border: 1px solid #dcdcdc;
 		}
 		.price-range-title{
 			color: $bg;
 			font-size: 20px;
 			line-height: 60px;
 			font-weight: 700;
-			padding-top: 20px;
+			padding-top: 10px;
+			border-bottom: 1px solid #dcdcdc;
+			margin-bottom: 30px;
+		}
+		.price-range_form{
+			button{
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
 		}
 		.top-sellers-box{
 			background-color: #fff;
 			margin-bottom: 30px;
 			padding-left: 30px;
 			padding-right: 30px;
-			padding-bottom: 32px;
-			hr{
-				margin-bottom: 28px;
+			padding-bottom: 30px;
+			border: 1px solid #dcdcdc;
+			.top-sellers-title{
+				color: $bg;
+				font-size: 20px;
+				line-height: 60px;
+				font-weight: 700;
+				padding-top: 10px;
+				border-bottom: 1px solid #dcdcdc;
+				margin-bottom: 30px;
 			}
 			.item__info{
 				padding: 0;
+				min-height: 70px;
 			}
 			.item__info-name{
 				font-size: 16px;
@@ -888,6 +908,7 @@ ul{
 			}
 			.item__user-box{
 				padding: 0;
+				min-height: 60px;
 			}
 			.item__user img {
 				margin-right: 5px;
@@ -910,15 +931,7 @@ ul{
 				width: 100%;
 				border: none;
 			}
-		}
-		.top-sellers-title{
-			color: $bg;
-			font-size: 20px;
-			line-height: 60px;
-			font-weight: 700;
-			padding-top: 20px;
-		}
-		
+		}	
 	}
 	.col-lg-9{
 		max-width: 870px;
@@ -926,6 +939,44 @@ ul{
 			background-color: #fff;
 			line-height: 60px;
 			margin-bottom: 30px;
+			padding-left: 50px;
+			padding-right: 25px;
+			border: 1px solid #dcdcdc;
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			
+			.sorting::after{
+				content: "\f161";
+				font-family: 'icomoon';
+				position: absolute;
+				left: 20px;
+				top: 0;
+			}
+			.sorting::before{
+				content: "\f0dc";
+				font-family: 'icomoon';
+				position: absolute;
+				left: 190px;
+				top: 0;
+			}
+			
+			.sort-view{
+				
+				.large::before{
+					content: "\f009";
+					font-family: 'icomoon';
+					padding-right: 12px;
+				}
+				.large.active{
+					color: $top;
+				}
+				
+				.list::before{
+					content: "\f00b";
+					font-family: 'icomoon';
+				}
+			}
 		}
 		.sorted-catalog{
 			display: flex;
@@ -957,6 +1008,32 @@ ul{
 				font-size: 12px;
 				padding-left: 7px;
 			}
+		}
+		.paganation{
+			padding-top: 15px;
+			li{
+				display: inline-block;
+				&+li{
+					padding-left: 8px;
+				}
+			}
+		}
+		.paganation_btn{
+			width: 43px;
+			height: 38px;
+			text-align: center;
+			line-height: 38px;
+			font-size: 16px;
+			font-weight: 500;
+			color: #263238;
+			background-color: #fff;
+			box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, .75);
+			display: inline-block;
+			&.active{
+				background-color: $red;
+				color: #fff;
+			}
+
 		}
 	}
 }

@@ -87,7 +87,6 @@
                         <div class="categories-title">
                             Categories
                         </div>
-                        <hr>
                         <ul>
                             <li>
                                 <a href="#">WordPress</a>
@@ -115,13 +114,15 @@
                         <div class="price-range-title">
                             Price Range
                         </div>
-                        <hr>
+                        <form class="price-range_form">
+                            <input type="text" class="js-range-slider" name="my_range" value="" />
+                            <button type="submit">Submit</button>
+                        </form>
                     </div>
                     <div class="top-sellers-box">
                         <div class="top-sellers-title">
                             Top 10 Sellers
                         </div>
-                        <hr>
                         <div class="top-sellers">
                             <div class="mix category-1">
                                 <div class="item">
@@ -238,7 +239,13 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="sort">
-                        Sort by: New Items
+                        <div class="sorting">
+                            Sort by: New Items
+                        </div>
+                        <div class="sort-view">
+                            <a href="#" class="large active"></a>
+                            <a href="#" class="list"></a>
+                        </div>
                     </div>
                     <div class="sorted-catalog">
 
@@ -674,9 +681,14 @@
                                 </div>
                             </div>
                         </div>
-
-
-
+                    </div>
+                    <div class="paganation">
+                        <ul>
+                            <li><a class="paganation_btn active" href="#">1</a></li>
+                            <li><a class="paganation_btn" href="#">2</a></li>
+                            <li><a class="paganation_btn" href="#">3</a></li>
+                            <li><a class="paganation_btn" href="#">4</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

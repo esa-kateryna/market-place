@@ -820,8 +820,9 @@ ul {
       margin-bottom: 30px;
       padding-left: 30px;
       padding-right: 30px;
-      padding-bottom: 40px;
-      background-color: #fff; }
+      padding-bottom: 20px;
+      background-color: #fff;
+      border: 1px solid #dcdcdc; }
       .row .col-lg-3 .category-box li {
         line-height: 40px;
         color: #263238;
@@ -840,34 +841,51 @@ ul {
       font-size: 20px;
       line-height: 60px;
       font-weight: 700;
-      padding-top: 20px; }
+      padding-top: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #dcdcdc; }
     .row .col-lg-3 .price-range-box {
       background-color: #fff;
       margin-bottom: 30px;
       padding-left: 30px;
-      padding-right: 30px; }
+      padding-right: 30px;
+      border: 1px solid #dcdcdc; }
     .row .col-lg-3 .price-range-title {
       color: #263238;
       font-size: 20px;
       line-height: 60px;
       font-weight: 700;
-      padding-top: 20px; }
+      padding-top: 10px;
+      border-bottom: 1px solid #dcdcdc;
+      margin-bottom: 30px; }
+    .row .col-lg-3 .price-range_form button {
+      margin-top: 30px;
+      margin-bottom: 30px; }
     .row .col-lg-3 .top-sellers-box {
       background-color: #fff;
       margin-bottom: 30px;
       padding-left: 30px;
       padding-right: 30px;
-      padding-bottom: 32px; }
-      .row .col-lg-3 .top-sellers-box hr {
-        margin-bottom: 28px; }
+      padding-bottom: 30px;
+      border: 1px solid #dcdcdc; }
+      .row .col-lg-3 .top-sellers-box .top-sellers-title {
+        color: #263238;
+        font-size: 20px;
+        line-height: 60px;
+        font-weight: 700;
+        padding-top: 10px;
+        border-bottom: 1px solid #dcdcdc;
+        margin-bottom: 30px; }
       .row .col-lg-3 .top-sellers-box .item__info {
-        padding: 0; }
+        padding: 0;
+        min-height: 70px; }
       .row .col-lg-3 .top-sellers-box .item__info-name {
         font-size: 16px; }
       .row .col-lg-3 .top-sellers-box .item__price {
         font-size: 16px; }
       .row .col-lg-3 .top-sellers-box .item__user-box {
-        padding: 0; }
+        padding: 0;
+        min-height: 60px; }
       .row .col-lg-3 .top-sellers-box .item__user img {
         margin-right: 5px; }
       .row .col-lg-3 .top-sellers-box .item__user-rating {
@@ -884,18 +902,43 @@ ul {
         background-color: #8bc34a;
         width: 100%;
         border: none; }
-    .row .col-lg-3 .top-sellers-title {
-      color: #263238;
-      font-size: 20px;
-      line-height: 60px;
-      font-weight: 700;
-      padding-top: 20px; }
   .row .col-lg-9 {
     max-width: 870px; }
     .row .col-lg-9 .sort {
       background-color: #fff;
       line-height: 60px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      padding-left: 50px;
+      padding-right: 25px;
+      border: 1px solid #dcdcdc;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .row .col-lg-9 .sort .sorting::after {
+        content: "\f161";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 20px;
+        top: 0; }
+      .row .col-lg-9 .sort .sorting::before {
+        content: "\f0dc";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 190px;
+        top: 0; }
+      .row .col-lg-9 .sort .sort-view .large::before {
+        content: "\f009";
+        font-family: 'icomoon';
+        padding-right: 12px; }
+      .row .col-lg-9 .sort .sort-view .large.active {
+        color: #8bc34a; }
+      .row .col-lg-9 .sort .sort-view .list::before {
+        content: "\f00b";
+        font-family: 'icomoon'; }
     .row .col-lg-9 .sorted-catalog {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -924,3 +967,24 @@ ul {
       .row .col-lg-9 .sorted-catalog .item__user-rating-number {
         font-size: 12px;
         padding-left: 7px; }
+    .row .col-lg-9 .paganation {
+      padding-top: 15px; }
+      .row .col-lg-9 .paganation li {
+        display: inline-block; }
+        .row .col-lg-9 .paganation li + li {
+          padding-left: 8px; }
+    .row .col-lg-9 .paganation_btn {
+      width: 43px;
+      height: 38px;
+      text-align: center;
+      line-height: 38px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #263238;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+      box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+      display: inline-block; }
+      .row .col-lg-9 .paganation_btn.active {
+        background-color: #e74c3c;
+        color: #fff; }
