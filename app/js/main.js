@@ -19,6 +19,10 @@ $ (function(){
         skin: "round"
     });
 
+    $(function(){
+        $('.upload__wrapper input').styler();
+    });
+
     var mixer = mixitup('.portfolio__content');
 
 });
