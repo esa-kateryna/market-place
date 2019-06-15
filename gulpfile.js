@@ -3,7 +3,7 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglifyjs = require('gulp-uglifyjs')
     cssnano = require('gulp-cssnano'),
-    rename = require('gulp-rename'),
+    concatCss = require('gulp-concat-css'),
     browserSync = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer');
 
@@ -14,18 +14,19 @@ gulp.task('html', function(){
 
 gulp.task('scss', function(){
     return gulp.src('app/scss/**/*.scss')
-        .pipe(autoprefixer({browsers: ['last 3 versions']}))
-        .pipe(scss())
+        .pipe(scss({outputStyle: 'expanded'}))
+        .pipe(autoprefixer({browsers: ['last 10 versions']}))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
 }); 
 
 gulp.task('css', function(){
-    return gulp.src(['app/css/libs.css',
-                    'node_modules/bootstrap/dist/css/bootstrap-grid.css',
-                'node_modules/ion-rangeslider/css/ion.rangeSlider.css'])
+    return gulp.src(['node_modules/normalize.css/normalize.css',
+                    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+                    'node_modules/slick-carousel/slick/slick.css',
+                    'node_modules/ion-rangeslider/css/ion.rangeSlider.css'])
+        .pipe(concatCss('libs.min.css'))           
         .pipe(cssnano())
-        .pipe(rename({'suffix' : '.min'}))
         .pipe(gulp.dest('app/css'))
 });
 
@@ -35,7 +36,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('script', function(){
-    return gulp.src(['node_modules/fancyapps/fancybox/dist/jquery.fancybox.js',
+    return gulp.src(['node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
                 'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
                 'node_modules/mixitup/dist/mixitup.js',
                 'node_modules/slick-carousel/slick/slick.js'])
