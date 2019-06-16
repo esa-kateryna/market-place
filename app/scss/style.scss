@@ -1093,3 +1093,150 @@ ul{
 		}
 	}
 }
+
+//upload page
+
+.upload{
+	background-color: #f4f5f6;
+	padding-bottom: 100px;
+}
+
+.upload__wrapper{
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+}
+.upload-title{
+	font-size: 24px;
+	line-height: 60px;
+	color: #263238;
+	border-bottom: 1px solid #dcdcdc;
+	padding-left: 30px;
+	margin-bottom: 40px;
+	font-weight: 500;
+}
+.upload__form-item{
+	margin-bottom: 18px;
+	padding-left: 30px;
+	padding-right: 50px;
+	display: flex;
+	label{
+		display: block;
+		width: 175px;
+		padding-right: 15px;
+		color: #444;
+		padding-top: 10px;
+		sup{
+			color: $top;
+			font-size: 20px;
+			top: 0;
+		}
+	}
+	.jq-selectbox__select{
+		border-radius: 0px;
+		border: 1px solid #dcdcdc;
+		height: 40px;
+		background: #f9f9f9;
+    	box-shadow: none;
+		text-shadow: none;
+		padding: 0 45px 0 15px;
+	}
+	.jq-selectbox{
+		width: 100%;
+	}
+	.jq-selectbox__trigger{
+		height: 0;
+	}
+	.jq-selectbox__select-text{
+		line-height: 40px;
+	}
+	.jq-selectbox__trigger-arrow {
+    top: 16px;
+    right: 15px;
+    border-top: 4px solid #444;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+	}
+	input{
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid #dcdcdc;
+		height: 40px;
+		background: #f9f9f9;
+    	box-shadow: none;
+		text-shadow: none;
+		padding: 0 15px 0 15px;
+		outline: none;
+	}
+	textarea{
+		width: 100%;
+		height: 146px;
+		box-sizing: border-box;
+		border: 1px solid #dcdcdc;
+		background: #f9f9f9;
+    	box-shadow: none;
+		text-shadow: none;
+		padding: 5px 15px;
+		resize: none;
+		outline: none;
+		line-height: 20px;
+	}
+	.jq-file{
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid #dcdcdc;
+		border-radius: 1px;
+		height: 40px;
+		background: #f9f9f9;
+    	box-shadow: none;
+		text-shadow: none;
+		padding: 0 15px 0 15px;
+		outline: none;
+	}
+	.jq-file__name{
+		background: #f9f9f9;
+		box-shadow: none;
+		border: none;
+		border-radius: 1px;
+		padding-left: 80px;
+		line-height: 40px;
+		outline: none;
+	}
+	.jq-file__browse{
+		height: 26px;
+		border-radius: 1px;
+		border: 1px solid #dcdcdc;
+		box-shadow: none;
+		text-shadow: none;
+		background: #fff;
+		position: absolute;
+    	top: 5px;
+		right: 845px;
+	}
+}
+.jq-number{
+	width: 100%;
+	padding: 0;
+	.jq-number__field {
+    	width: 100%;
+    	border: 1px solid #dcdcdc;
+    	border-radius: 1px;
+		box-shadow: none;
+	}
+}
+.jq-number__spin.minus,
+.jq-number__spin.plus{
+	display: none;
+}
+.upload__form-box button{
+	background-color: $top;
+	margin-top: 45px;
+	margin-bottom: 65px;
+	margin-left: 195px;
+	color: #fff;
+	line-height: 40px;
+	padding-left: 36px;
+	padding-right: 40px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

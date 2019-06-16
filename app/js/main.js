@@ -19,9 +19,9 @@ $ (function(){
         skin: "round"
     });
 
-    $(function(){
-        $('.upload__wrapper input').styler();
-    });
+    
+    $('.upload__wrapper input, .upload__wrapper select').styler();
+    
 
     var mixer = mixitup('.portfolio__content');
 
