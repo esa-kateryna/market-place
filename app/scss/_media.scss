@@ -1,0 +1,162 @@
+@media (max-width: 1600px){
+	.portfolio__content{
+		justify-content: space-around;
+	}
+}
+@media (max-width: 1100px){
+	.footer__content-inner{
+		display: block;
+	}
+	.footer__content-box,
+	.footer__content-list{
+		display: none;
+		margin-bottom: 50px;
+	}
+	.footer__content-title{
+		display: block;
+		position: relative;
+		&:before{
+			content: "\f107";
+			position: absolute;
+			font-family: 'icomoon';
+			right: 0;
+			color: #8bc34a;
+		}
+		&.active:before{
+			transform: rotate(180deg);
+		}
+	}
+	.footer__content-item:nth-child(3){
+		width: 270px;
+	}
+}
+@media (max-width: 900px){
+	.slider__inner{
+		.item{
+			margin: 0 auto 30px;
+		}
+	}
+	.portfolio__content{
+		.mix{
+			width: 100%;
+		}
+		.item{
+			max-width: 100%;
+		}
+	}
+	.header__menu-btn{
+		display: block;
+		color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+	}
+	.menu{
+		ul{
+			display: none;
+			text-align: center;
+		}
+		a{
+			display: block;
+			line-height: 37px;
+		}
+		li{
+			display: block;
+			& + li{
+				padding-left: 0;
+			}
+		}
+	}
+}
+@media (max-width: 850px) {
+	.header-top_content{
+		display: block;
+		padding-bottom: 20px;
+		height: auto;
+	}
+	.logo{
+		padding: 20px 0;
+		text-align: center;
+	}
+	.header-right{
+		justify-content: space-between;
+	}
+	.header__content-items{
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 640px){
+	.header__content-right{
+		display: block;
+		text-align: center;
+	}
+	.header__content-item{
+		margin: 25px auto;
+	}
+	.header__content-items{
+		margin-right: auto;
+	}
+	.header__content-text{
+		margin-right: 0;
+	}
+	.portfolio__btn button{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+}
+@media (max-width: 440px){
+	.slider{
+		.container-fluid{
+			padding: 0 15px;
+		}
+		.item__info,
+		.item__user-box{
+			padding: 0 5px;
+		}
+		.item__user img{
+			margin-right: 5px;
+		}
+		.item__user-rating-number{
+			padding-left: 3px;
+		}
+	}
+}
+@media (max-width: 400px){
+	.portfolio{
+		.container-fluid{
+			padding: 0px 15px;
+		}
+		.item{
+			.item__info,
+			.item__user-box{
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		}
+		.item__user img{
+			margin-right: 5px;
+		}
+	}
+}
+
+@media (max-width: 360px){
+	.search__title{
+		font-size: 44px;
+	}
+	.search.search__home{
+		padding: 75px 0;
+	}
+}
+
+
+
+
+@media (min-width: 900px){
+	.menu{
+		ul{
+			display: block !important;
+		}
+	}
+}

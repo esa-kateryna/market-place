@@ -5,7 +5,30 @@ $ (function(){
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: false,
-        dots: true
+        dots: true,
+            responsive: [
+			    {
+				    breakpoint: 1601,
+				    settings: {
+					    slidesToShow: 3,
+					    slidesToScroll: 3,
+			    	}
+			    },
+			    {
+				    breakpoint: 1140,
+				    settings: {
+					    slidesToShow: 2,
+					    slidesToScroll: 2,
+				    }
+		    	},
+			    {
+				    breakpoint: 769,
+				    settings: {
+					    slidesToShow: 1,
+					    slidesToScroll: 1,
+				    }
+			    }
+		    ]
     });
 
     $(".js-range-slider").ionRangeSlider({
