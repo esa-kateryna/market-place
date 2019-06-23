@@ -3,7 +3,25 @@
 		justify-content: space-around;
 	}
 }
+@media (max-width: 1200px){
+	.tutorials-content{
+		display: block;
+	}
+	.tutorials-content-item {
+		background-color: #fff;
+		margin-bottom: 50px;
+		text-align: center;
+		border-bottom: 2px solid #dcdcdc;
+	}
+}
 @media (max-width: 1100px){
+	.author {
+		min-height: 400px;
+	}
+	.author-container{
+		max-width: 700px;
+		background-color: #f4f6f5;
+	}
 	.footer__content-inner{
 		display: block;
 	}
@@ -28,6 +46,11 @@
 	}
 	.footer__content-item:nth-child(3){
 		width: 270px;
+	}
+}
+@media (min-width: 900px){
+	.header__menu-btn{
+		display: none;
 	}
 }
 @media (max-width: 900px){
@@ -66,6 +89,13 @@
 			}
 		}
 	}
+	.advantages-content {
+		display: block;
+	}
+	.advantages-content-item{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 }
 @media (max-width: 850px) {
 	.header-top_content{
@@ -75,28 +105,51 @@
 	}
 	.logo{
 		padding: 20px 0;
+		margin-bottom: 20px;
 		text-align: center;
 	}
 	.header-right{
 		justify-content: space-between;
 	}
-	.header__content-items{
+	.cart{
 		margin-left: auto;
 	}
 }
-
-@media (max-width: 640px){
-	.header__content-right{
+@media (max-width: 760px){
+	.search__title{
+		line-height: 55px;
+	}
+	
+	.author-container{
+		max-width: 440px;
+		background-color: #f4f6f5;
+	}
+	.author-container-inner{
+		display: block;
+		align-items: center;
+	}
+	.author-text{
+		margin: 0 auto;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	.become-author{
+		transform: translateX(50%);
+		margin-right: 0;
+	}
+}
+@media (max-width: 660px){
+	.header-right{
 		display: block;
 		text-align: center;
 	}
 	.header__content-item{
 		margin: 25px auto;
 	}
-	.header__content-items{
+	.cart{
 		margin-right: auto;
 	}
-	.header__content-text{
+	.contact-text{
 		margin-right: 0;
 	}
 	.portfolio__btn button{
@@ -121,6 +174,19 @@
 		.item__user-rating-number{
 			padding-left: 3px;
 		}
+	}
+	
+	.author-container{
+		max-width: 320px;
+	}
+	.author-container-inner{
+		max-width: 320px;
+	}
+	.become-author{
+		transform: translateX(20%);
+	}
+	.tutorials img{
+		width: 100%;
 	}
 }
 @media (max-width: 400px){
@@ -148,8 +214,15 @@
 	.search.search__home{
 		padding: 75px 0;
 	}
+	.advantages-item-title{
+		line-height: 40px;
+	}
 }
-
+@media (max-width: 350px){
+	.portgolio__link a{
+		margin-bottom: 15px;
+	}
+}
 
 
 
