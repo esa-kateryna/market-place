@@ -1555,6 +1555,10 @@ ul li {
   display: none;
 }
 
+.upload__form-box {
+  padding-bottom: 65px;
+}
+
 .upload__form-box button {
   background-color: #8bc34a;
   margin-top: 45px;
@@ -2021,7 +2025,7 @@ ul li {
   font-family: 'icomoon';
   font-size: 20px;
   color: #fff;
-  left: 40%;
+  left: 25%;
   top: 10%;
 }
 
@@ -2035,7 +2039,7 @@ ul li {
   font-family: 'icomoon';
   font-size: 20px;
   color: #fff;
-  left: 40%;
+  left: 35%;
   top: 10%;
 }
 
@@ -2102,6 +2106,10 @@ ul li {
         -ms-flex-pack: distribute;
             justify-content: space-around;
   }
+  .product__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2113,6 +2121,12 @@ ul li {
     margin-bottom: 50px;
     text-align: center;
     border-bottom: 2px solid #dcdcdc;
+  }
+  .upload__form-item .jq-file__browse {
+    right: 90%;
+  }
+  .row {
+    display: block;
   }
 }
 
@@ -2150,6 +2164,12 @@ ul li {
   }
   .footer__content-item:nth-child(3) {
     width: 270px;
+  }
+  .upload__form-item .jq-file__browse {
+    right: 5%;
+  }
+  .upload__form-item .jq-file__name {
+    padding-left: 5px;
   }
 }
 
@@ -2195,6 +2215,25 @@ ul li {
   .advantages-content-item {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  .col-9 img {
+    max-width: 500px;
+    border: none;
+  }
+  .product-details {
+    display: block;
+  }
+  .product-details-main {
+    margin-bottom: 15px;
+  }
+  .product-details .live-preview {
+    margin-bottom: 15px;
+  }
+  .product-details .screenshots {
+    margin-bottom: 15px;
+  }
+  .product-details .documentation {
+    margin-bottom: 15px;
   }
 }
 
@@ -2268,6 +2307,24 @@ ul li {
     margin-bottom: 10px;
     text-align: center;
   }
+  .row .col-lg-9 .sort {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 270px;
+    display: block;
+  }
+  .upload__form-box button {
+    margin-left: 40%;
+  }
+}
+
+@media (max-width: 540px) {
+  .row {
+    display: block;
+  }
+  .col-9 img {
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -2297,6 +2354,15 @@ ul li {
   }
   .tutorials img {
     width: 100%;
+  }
+  .upload__form-item {
+    display: block;
+  }
+  .upload__form-item label {
+    margin-bottom: 15px;
+  }
+  .upload__form-box button {
+    margin-left: 30%;
   }
 }
 
@@ -2329,6 +2395,9 @@ ul li {
 @media (max-width: 350px) {
   .portgolio__link a {
     margin-bottom: 15px;
+  }
+  .col-9 img {
+    max-width: 270px;
   }
 }
 

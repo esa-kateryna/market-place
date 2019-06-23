@@ -1227,6 +1227,9 @@ ul{
 .jq-number__spin.plus{
 	display: none;
 }
+.upload__form-box{
+	padding-bottom: 65px;
+}
 .upload__form-box button{
 	background-color: $top;
 	margin-top: 45px;
@@ -1594,7 +1597,7 @@ ul{
 					font-family:  'icomoon';
 					font-size: 20px;
 					color: #fff;
-					left: 40%;
+					left: 25%;
 					top: 10%;
 				}
 			}
@@ -1605,7 +1608,7 @@ ul{
 					font-family:  'icomoon';
 					font-size: 20px;
 					color: #fff;
-					left: 40%;
+					left: 35%;
 					top: 10%;
 				}}
 		}

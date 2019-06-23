@@ -2,6 +2,10 @@
 	.portfolio__content{
 		justify-content: space-around;
 	}
+	.product__wrapper{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 }
 @media (max-width: 1200px){
 	.tutorials-content{
@@ -12,6 +16,12 @@
 		margin-bottom: 50px;
 		text-align: center;
 		border-bottom: 2px solid #dcdcdc;
+	}
+	.upload__form-item .jq-file__browse{
+		right: 90%;
+	}
+	.row{
+		display: block;
 	}
 }
 @media (max-width: 1100px){
@@ -46,6 +56,12 @@
 	}
 	.footer__content-item:nth-child(3){
 		width: 270px;
+	}
+	.upload__form-item .jq-file__browse{
+		right: 5%;
+	}
+	.upload__form-item .jq-file__name{
+		padding-left: 5px;
 	}
 }
 @media (min-width: 900px){
@@ -95,6 +111,25 @@
 	.advantages-content-item{
 		padding-left: 25px;
 		padding-right: 25px;
+	}
+	.col-9 img{
+		max-width: 500px;
+		border: none;
+	}
+	.product-details{
+		display: block;
+	}
+	.product-details-main{
+		margin-bottom: 15px;
+	}
+	.product-details .live-preview{
+		margin-bottom: 15px;
+	}
+	.product-details .screenshots{
+		margin-bottom: 15px;
+	}
+	.product-details .documentation{
+		margin-bottom: 15px;
 	}
 }
 @media (max-width: 850px) {
@@ -158,6 +193,22 @@
 		margin-bottom: 10px;
 		text-align: center;
 	}
+	.row .col-lg-9 .sort{
+		box-sizing: border-box;
+		width: 270px;
+		display: block;
+	}
+	.upload__form-box button{
+		margin-left: 40%;
+	}
+}
+@media (max-width: 540px){
+	.row{
+		display: block;
+	}
+	.col-9 img{
+		max-width: 320px;
+	}
 }
 @media (max-width: 440px){
 	.slider{
@@ -187,6 +238,15 @@
 	}
 	.tutorials img{
 		width: 100%;
+	}
+	.upload__form-item{
+		display: block;
+	}
+	.upload__form-item label{
+		margin-bottom: 15px;
+	}
+	.upload__form-box button{
+		margin-left: 30%;
 	}
 }
 @media (max-width: 400px){
@@ -221,6 +281,9 @@
 @media (max-width: 350px){
 	.portgolio__link a{
 		margin-bottom: 15px;
+	}
+	.col-9 img{
+		max-width: 270px;
 	}
 }
 
