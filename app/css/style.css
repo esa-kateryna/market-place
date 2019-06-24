@@ -2128,6 +2128,9 @@ ul li {
   .row {
     display: block;
   }
+  .col-3 {
+    max-width: 870px;
+  }
 }
 
 @media (max-width: 1100px) {
